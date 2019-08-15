@@ -194,6 +194,23 @@ img {
     padding: 20px 0 10px 0;
   }
 }
+#links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 40%;
+}
+@media "(max-width: 500px" {
+  #links {
+    width: 90%;
+  }
+}
+#links .fun {
+  text-decoration: none;
+  color: #212529;
+  font-size: 2rem;
+  margin: 10px 0;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
