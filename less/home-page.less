@@ -1,4 +1,38 @@
 .home {
+  @media @mobile{
+    width: 100%;
+  }
+
+  .welcome{
+    border-bottom: @borderStyle;
+    @media @mobile{
+      width: 100%;
+      padding: 3%;
+    }
+  }
+
+  .top{
+    width: 100%;
+  }
+
+  h1{
+    margin: 10px 0;
+    width: 50%;
+    @media @mobile{
+      text-align: center;
+    }
+  }
+
+  .img-top{
+    padding-bottom: 25px;
+    @media @mobile{
+      width: 100%;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+  }
+
+}
 
   .content-section {
     margin: 30px 0;
@@ -11,14 +45,25 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile{
+        width: 100%;
+        padding: 3%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile{
+        width: 100%;
+        padding: 3%;
+      }
 
       img {
         border-radius: 10px;
+        @media @mobile{
+          width: 100%;
+        }
       }
     }
   }
