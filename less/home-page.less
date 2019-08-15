@@ -81,6 +81,9 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile{
+        padding-top: 0;
+      }
     }
 
     .img-content {
@@ -92,9 +95,17 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile{
+      width: 100%;
+      padding: 3%;
+    }
 
     img {
       border-radius: 10px;
+      @media @mobile{
+        width: 100%;
+        padding: 3%;
+      }
     }
   }
 
