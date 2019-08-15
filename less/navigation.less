@@ -1,1 +1,17 @@
 // Navigation Styles here
+.top-content{
+    display: flex;
+    flex-direction: row;
+    border-bottom: @borderStyle;
+    padding: 16px 0 22px 0;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    @media @mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px 0 10px 0;
+    }
+}
