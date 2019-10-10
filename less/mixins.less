@@ -1,1 +1,32 @@
 // Mixins in here
+.sign-up-button(@color, @background) {
+    color: @color;
+    background: @background;
+    font-size: 1.8rem;
+    width: 85%;
+    padding: 1.2rem 0;
+    text-align: center;
+    border-radius: 16px;
+  }
+  
+  .nav-hover-animation(@color) {
+    color: @color;
+    transition: ease-in 0.25s;
+    text-shadow: 1px 1px 1px @shark;
+  }
+  
+  .custom-flex-layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+  }
+  
+  .input-hover-animation {
+    transform: scale(1);
+    transition: ease-in 0.1s;
+  }
+  
+  .button-hover-animation(@background) {
+    background: darken(@background, 20%);
+    .input-hover-animation();
+  }
