@@ -1,32 +1,52 @@
 // Navigation Styles here
-.top-content{
-    display: flex;
-    flex-direction: row;
-    border-bottom: @borderStyle;
-    padding: 16px 0 22px 0;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-
-    @media @mobile{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 20px 0 10px 0;
+nav {
+    .custom-flex-layout(space-between, center);
+    padding: 1.6rem 1.2rem;
+    border-bottom: 2px dashed @navigation-border;
+  
+    @media @tablet {
+      flex-direction: column;
+      align-items: center;
     }
-}
-
-#links{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 40%;
-    @media @mobile{
-        width: 90%;
+  
+    h1 {
+      padding-left: 2.6rem;
+  
+      @media @tablet {
+        padding: 0 0 1.4rem 0;
+      }
+  
+      @media @mobile {
+        font-size: 3.2rem;
+      }
     }
-
-    .fun{
-        .nav();
-        margin: 10px 0;
+    
+    ul {
+      .custom-flex-layout(center, center);
+  
+      @media @tablet {
+        .custom-flex-layout(space-evenly, space-between);
+        width: 100%;
+      }
     }
-}
+  
+    li {
+      padding: 0 2rem;
+  
+      @media @mobile {
+        padding: 0;
+      }
+  
+      a {
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: 200;
+        color: @shark;
+        transition: ease-out 0.15s;
+  
+        &:hover {
+          .nav-hover-animation(@shark);
+        }
+      }
+    }
+  }

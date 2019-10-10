@@ -22,14 +22,15 @@
 
       <header class="top">
           <div class= "top-content">
+            <nav>
               <h1>Fun Bus</h1>
-              <nav id="links">
-                <a class= "fun"href="#">Home</a>
-                <a class= "fun"href="#">About Us</a>
-                <a class= "fun"href="#">Blog</a>
-                <a class= "fun"href="#">Contact</a>
-              </nav>
-          </div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav> 
             <div class= "img-top">
               <img src="img/fun-bus.jpg" alt="Fun Bus">
             </div>
@@ -85,6 +86,28 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+
+    <section class="contact-form">
+      <h2>Book Your Package Here!</h2>
+      <form action="#">
+        <div class="form-input form-name">
+          <label for="name">Name:</label>
+          <input type="text" name="name" placeholder="Name...">
+        </div>
+        <div class="form-input form-email">
+          <label for="email">Email:</label>
+          <input type="text" name="email" placeholder="Email...">
+        </div>
+        <div class="form-input form-phone">
+          <label for="phone">Phone Number:</label>
+          <input type="text" name="phone" placeholder="Phone Number...">
+        </div>
+        <h2>Special Instructions?</h2>
+        <textarea name="comments" id="comments" cols="70" rows="10"></textarea>
+        <input type="submit">
+      </form>
+    </section>
+
   </div><!-- container -->
 
   <footer class="footer">
